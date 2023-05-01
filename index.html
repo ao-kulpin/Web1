@@ -10,20 +10,28 @@
 <body>
 	<div class="block1">
 		<p> Верхний левый:
-			<input type="range" min="0" max="100" step="1" value="0" oninput="f1()" id="rtl" oninput="f1()">
+			<input type="range" min="0" max="300" step="1" value="0" id="rtl" oninput="f1()">
 			<input type="text" value="0" id="ttl">
 		</p>
 		<p> Верхний правый:
-			<input type="range" min="0" max="100" step="1" value="0" oninput="f1()" id="rtr" oninput="f1()">
+			<input type="range" min="0" max="300" step="1" value="0" id="rtr" oninput="f1()">
 			<input type="text" value="0" id="ttr">
 		</p>
 		<p> Нижний левый:
-			<input type="range" min="0" max="100" step="1" value="0" oninput="f1()" id="rbl" oninput="f1()">
+			<input type="range" min="0" max="300" step="1" value="0" id="rbl" oninput="f1()">
 			<input type="text" value="0" id="tbl">
 		</p>
 		<p> Нижний правый:
-			<input type="range" min="0" max="100" step="1" value="0" oninput="f1()" id="rbr" oninput="f1()">
+			<input type="range" min="0" max="300" step="1" value="0" id="rbr" oninput="f1()">
 			<input type="text" value="0" id="tbr">
+		</p>
+		<p> Размер (px):
+			<input type="range" min="0" max="400" step="1" value="200" id="rsz" oninput="f5()">
+			<input type="text" value="200" id="tsz" oninput="f6()">
+		</p>
+		<p> Ширина рамки (px):
+			<input type="range" min="0" max="200" step="1" value="0" id="rfr" oninput="f3()">
+			<input type="text" value="0" id="tfr" oninput="f4()">
 		</p>
 	</div>
 	<div id="block">

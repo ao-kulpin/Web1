@@ -1,6 +1,9 @@
 #block {
 	width: 200px;
 	height: 200px;
-	background: lightblue;
+	background: gold;
 	cursor: pointer;
+	border: solid;
+	border-color: red gray blue green;
+	border-width: thick;
 }

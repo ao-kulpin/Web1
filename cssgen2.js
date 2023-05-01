@@ -7,10 +7,22 @@
 	const ttr = document.getElementById('ttr');
 	const tbl = document.getElementById('tbl');
 	const tbr = document.getElementById('tbr');
+
+	const rfr = document.getElementById('rfr');
+	const tfr = document.getElementById('tfr');
+
+	const rsz = document.getElementById('rsz');
+	const tsz = document.getElementById('tsz');
+
 	const block = document.getElementById('block');
+
+	let ss = '123';
 
 const redraw = () => {
 	block.style.borderRadius = rtl.value + 'px ' + rtr.value + 'px ' + rbr.value + 'px ' + rbl.value + 'px ';
+    block.style.borderWidth = rfr.value  + 'px';
+    block.style.width = rsz.value  + 'px';
+    block.style.height = rsz.value  + 'px';
 }
 
 const f1 = () => {
@@ -42,6 +54,29 @@ const f2 = (event) => {
 	
 	redraw();
 }
+
+
+const f3 = () => {
+	tfr.value = rfr.value;
+	redraw();
+}
+
+const f4 = () => {
+	rfr.value = tfr.value;
+	redraw();
+}
+
+const f5 = () => {
+	tsz.value = rsz.value;
+	redraw();
+}
+
+const f6 = () => {
+	rsz.value = tsz.value;
+	redraw();
+}
+
+
 
 ttl.addEventListener('input', f2);
 ttr.addEventListener('input', f2);
